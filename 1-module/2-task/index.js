@@ -1,16 +1,9 @@
-/**
- * Эту функцию трогать не нужно
- */
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
-function isValid(name) {
-  // ваш код...
+function isValid(name) { 
+  return typeof name === 'string' && name.length >= 4 && !/\s/.test(name);
 }
 
 function sayHello() {
